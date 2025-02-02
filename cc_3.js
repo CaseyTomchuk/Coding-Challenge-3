@@ -28,3 +28,22 @@ let employee = {
 employee.performanceScore = 90;
 employee.promotionEligible = false;
 console.log("Employee information: ", employee); 
+
+// Task 4: Customer Feedback Records Scenario: Feedback Management You are collecting customer feedback data.
+let customerResponses = [{ 
+    customerName: "elise",
+    feedbackText: "Good support, but some delays",
+    rating: 85
+},
+{
+    customerName: "albert",
+    feedbackText: "No issues",
+    rating: 100
+},
+{
+    customerName: "john",
+    feedbackText: "John approves",
+    rating: 95
+}
+];
+console.table(customerResponses); //Decidesd to do console.table rather than console.log so the responses don't appear as {...}
