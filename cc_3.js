@@ -17,3 +17,14 @@ for (let i = 0; i < orders.length; i++) {
 
 console.log("List of orders: " + orders);
 console.log("Total number of orders: " + sum);
+
+// Task 3: Employee Performance Tracking Scenario: HR System You are tracking employee performance data.
+let employee = {
+    name: "casey",
+    role: "manager",
+    performanceScore: 95,
+    isActive: true
+};
+employee.performanceScore = 90;
+employee.promotionEligible = false;
+console.log("Employee information: ", employee); 
