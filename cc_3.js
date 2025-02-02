@@ -30,7 +30,7 @@ employee.promotionEligible = false;
 console.log("Employee information: ", employee); 
 
 // Task 4: Customer Feedback Records Scenario: Feedback Management You are collecting customer feedback data.
-let customerResponses = [{ 
+let feedback = [{ 
     customerName: "elise",
     feedbackText: "Good support, but some delays",
     rating: 85
@@ -46,4 +46,19 @@ let customerResponses = [{
     rating: 95
 }
 ];
-console.table(customerResponses); //Decidesd to do console.table rather than console.log so the responses don't appear as {...}
+feedback.push({ // adding a new object the array with .push (forgot to do this on commit 4)
+    customerName: "aj",
+    feedbackText: "10 big booms",
+    rating: 98
+});
+console.table(feedback); //Decided to do console.table rather than console.log so the responses don't appear as {...}
+
+// Task 5: Inventory Management System Scenario: Stock Analysis You are developing a system to track inventory details.
+let inventory =  {
+    itemName: "Piano",
+    stockCount: 15,
+    price: 899
+};
+inventory.calculateTotalValue = function () {return this.stockCount * this.price;} //creating the function that calculates total value
+console.log("Inventory info:", inventory)
+console.log("Total inventory value:", inventory.calculateTotalValue());
